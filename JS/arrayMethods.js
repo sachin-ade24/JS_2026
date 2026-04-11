@@ -168,11 +168,11 @@ console.log(fruits);//[ 'Muskmelon', 'Watermelon', 'Apple', 'Grapes', 'Orange', 
 fruits.splice(0, 1);
 console.log(fruits);//[ 'Watermelon', 'Apple', 'Grapes', 'Orange', 'Guava' ]
 
-//pop() can also be done:
+//pop() operation can be done by splice:
 fruits.splice(fruits.length-1, 1);
 console.log(fruits);//[ 'Watermelon', 'Apple', 'Grapes', 'Orange' ]
 
-//Splice can combine two arrays:
+//splice can combine two arrays:
 let newFruits = ['Strawberry', 'Cherry'];
 fruits.splice(fruits.length, 0, ...newFruits);
 console.log(fruits);//[ 'Watermelon', 'Apple', 'Grapes', 'Orange', 'Strawberry', 'Cherry' ]
@@ -192,7 +192,7 @@ console.log(fruits);
 ]
 */
 
-//Replace Berries by Coconut
+//Replace Berries by Coconut:
 fruits.splice(fruits.length-1, 1, 'Coconut');
 console.log(fruits);
 /*
@@ -233,6 +233,12 @@ console.log(marks.lastIndexOf(1));//7
 
 /*
 lastIndexOf():
+    (method) Array<number>.lastIndexOf(searchElement: number, fromIndex?: number | undefined): number
 
+    Returns the index of the last occurrence of a specified value in an array, or -1 if it is not present.
+
+    @param searchElement — The value to locate in the array.
+
+    @param fromIndex — The array index at which to begin searching backward. If fromIndex is omitted, the search starts at the last index in the array.
 */
 console.log(marks.lastIndexOf(1));//7
