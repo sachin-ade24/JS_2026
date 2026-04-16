@@ -151,3 +151,89 @@ let s3 = myCalc(100, 400, function(a, b){
 });
 console.log(s3);//500
 
+console.log('======================================================================');
+
+//1.
+function greet1(name){
+    console.log(`Hi, ${name}`);
+}
+
+function processUser1(username, callback){
+    console.log('Processing...');
+    callback(username);
+}
+
+processUser1('Sachin', greet1);
+/*
+Processing...
+Hi, Sachin
+*/
+
+//2.
+//callback with anonymous function:
+let greet2 = function(name){
+    console.log('Hi, ', name);
+}
+
+function processUser2(name, callback){
+    console.log('Processing..');
+    callback(name);
+}
+
+processUser2('Sachin', greet2);
+/*
+Processing..
+Hi,  Sachin
+*/
+
+//3.
+//callback with arrow function:
+let u = (name) => {
+    console.log('Hi, ', name);
+};
+
+function processUser3(username, callback){
+    console.log('Processing...');
+    callback(username);
+}
+
+processUser3('Sachin', u);
+
+//4.
+//callback with setTimeout
+function processUser4(callback){
+    setTimeout((username)=>{
+        console.log('Processing...', username);
+        callback(username);
+    }, 5000, 'Sachin');
+}
+
+processUser4(greet1);
+/*
+Processing... Sachin
+Hi, Sachin
+*/
+
+//5.
+//callback with setTimeout
+console.log('1. Start');
+setTimeout(() => {
+    console.log('3. done');
+}, 2000);
+console.log('2. End');
+/*
+1. Start
+2. End
+3. done
+*/
+
+
+//After execution:
+/*
+o/p for both setTimeout():
+1. Start
+2. End
+3. done
+Processing... Sachin
+Hi, Sachin
+*/

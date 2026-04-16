@@ -68,3 +68,21 @@ Browser name is: edge
 Launch edge
 Enter the URL: https://www.google.com
 */
+
+//====================================IMPORTANT=====================================//
+
+//callback with anonymous function:
+let greet = function(name){
+    console.log('Hi, ', name);
+}
+
+function processUser(name, callback){
+    console.log('Processing..');
+    callback(name);
+}
+
+processUser('Sachin', greet);
+/*
+Processing..
+Hi,  Sachin
+*/

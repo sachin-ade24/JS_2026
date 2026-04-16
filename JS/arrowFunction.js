@@ -127,3 +127,18 @@ restDevices(['iPhone', 'Macbook'], ['Samsung Galaxy Tab', 'Samsung Watch']);
 [ [ 'iPhone', 'Macbook' ], [ 'Samsung Galaxy Tab', 'Samsung Watch' ] ]
 */
 
+console.log('======================================================================');
+
+//====================================IMPORTANT=====================================//
+
+//callback with arrow function:
+let u = (name) => {
+    console.log('Hi, ', name);
+};
+
+function processUser(username, callback){
+    console.log('Processing...');
+    callback(username);
+}
+
+processUser('Sachin', u);
