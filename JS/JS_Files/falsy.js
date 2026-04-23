@@ -49,7 +49,6 @@ if(undefined){
     console.log("world!");
 }//o/p: world!
 
-
 //8.
 if(NaN){
     console.log("Hellooo..");
@@ -57,7 +56,7 @@ if(NaN){
     console.log("world!");
 }//o/p: world!
 
-//12.
+//9.
 if(console.log('JS')){
     console.log("Hellooo..");
 } else{

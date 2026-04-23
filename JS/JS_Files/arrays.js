@@ -5,22 +5,22 @@ let num = [10, 20, 30, 40];
 
 console.log(num);
 
-console.log(num[0]);
-console.log(num[3]);
-console.log(num[-1]);
-console.log(num[4]);
+console.log(num[0]);//10
+console.log(num[3]);//20
+console.log(num[-1]);//undefined
+console.log(num[4]);//undefined
 
 console.log('======================================================================');
 
 //length:
-console.log(num.length);
-console.log(num[num.length-1])
+console.log(num.length);//4
+console.log(num[num.length-1])//40
 
 console.log('======================================================================');
 
 num[4] = 5;
-console.log(num);
-console.log(num.length);
+console.log(num);//[ 10, 20, 30, 40, 5 ]
+console.log(num.length);//5
 
 console.log('======================================================================');
 
@@ -29,7 +29,7 @@ console.log(num);//[ 10, 20, 30, 40, 5, <5 empty items>, 100 ]
 console.log(num[8]);//undefined
 console.log(num[9]);//undefined
 console.log(num[10]);//100
-console.log(num.length);
+console.log(num.length);//11
 
 console.log('======================================================================');
 
