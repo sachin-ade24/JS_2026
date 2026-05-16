@@ -84,6 +84,8 @@ console.log('===================================================================
 startsWith():
     (method) String.startsWith(searchString: string, position?: number | undefined): boolean
 
+    The startsWith() method returns true if a string begins with a specified value.
+
     Returns true if the sequence of elements of searchString converted to a String is the same as the corresponding elements of this 
     object (converted to a String) starting at position. Otherwise returns false.
 */
@@ -99,6 +101,8 @@ console.log('===================================================================
 /*
 endsWith();
     (method) String.endsWith(searchString: string, endPosition?: number | undefined): boolean
+
+    The endsWith() method returns true if a string ends with a specified value.
 
     Returns true if the sequence of elements of searchString converted to a String is the same as the corresponding elements of this 
     object (converted to a String) starting at endPosition – length(this). Otherwise returns false.

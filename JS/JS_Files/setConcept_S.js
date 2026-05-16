@@ -141,3 +141,12 @@ let newSet=  new Set([10, 20, 30, 40, 50]);
 let isDeleted = newSet.delete(50);
 console.log(isDeleted);//true
 console.log(newSet.delete(60));//false
+
+for(let [k, v] of newSet.entries()){
+    console.log(`${k}: ${v}`);
+};
+
+let ns = new Set(["Aa", "Bb", "Cc", "Dd", "Ee"]);
+for(let [k,v] of ns.entries()){
+    console.log(`${k}: ${v}`);
+}

@@ -10,6 +10,8 @@ Arrow function:
 let print = () => console.log('Learning JavaScript');
 print();//Learning JavaScript
 
+(() => console.log("Hello__world.."))();
+
 
 //2. One parameter:
 let printName = (name) => console.log(name);
@@ -49,6 +51,8 @@ console.log(r1);//Valid
 204
 104
 */
+//IIFE:
+((a) => console.log(a + 4))(5);//9
 
 /**
  * 

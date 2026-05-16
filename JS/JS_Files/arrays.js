@@ -89,6 +89,10 @@ Array.of():
 console.log(numArr.length, numArr);//4 [ 1, 2, 3, 4 ]
 let arrNum1 = [5, 6, 7];
 let arrNum2 = [9, 7];
+let arrNum3 = [arrNum1, arrNum2];
+console.log(arrNum3);//[ [ 5, 6, 7 ], [ 9, 7 ] ]
+let arrNum4 = [...arrNum1, ...arrNum2];//[ 5, 6, 7, 9, 7 ]
+console.log(arrNum4);
 let arNu1 = Array.of(numArr, arrNum1, arrNum2);
 console.log(arNu1);//[ [ 1, 2, 3, 4 ], [ 5, 6, 7 ], [ 9, 7 ] ]
 
@@ -150,3 +154,21 @@ console.log(Array.of(...fool1, ...fool2, ...fool3));
   't'
 ]
 */
+
+
+//
+let ay1 = [10, 20, 30, 40];
+let k = ay1.keys();
+console.log([...k]);//[ 0, 1, 2, 3 ]
+let v = ay1.values();
+console.log([...v]);//[ 10, 20, 30, 40 ]
+
+for(let i=0; i<ay1.length; i++){
+  for(let j=1; j<ay1.length; j++){
+    let c = 0;
+    if(ay1[i]==ay[j]){
+      c++;
+    };
+  }
+  console.log(`${ay1[i]}: ${c}`);
+}

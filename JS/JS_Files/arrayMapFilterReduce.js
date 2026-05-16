@@ -11,6 +11,14 @@ map():
 */
 let num = [1, 2, 3, 4, 5];
 
+let n1 = num.map((m)=>m*3);
+console.log(n1);//[ 3, 6, 9, 12, 15 ]
+
+n1 = num.map((m)=>{
+    return m*3;
+});
+console.log(n1);//[ 3, 6, 9, 12, 15 ]
+
 //Twice of each array element:
 let numTwice = num.map(n => n * 2);
 console.log(numTwice);//[ 2, 4, 6, 8, 10 ]

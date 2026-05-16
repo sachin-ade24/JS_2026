@@ -42,6 +42,18 @@ console.log(num);
 ]
 */
 
+let n1 = [1, 2, 3, 4, 5];
+let n2 = [6, 7, 8, 9, 10];
+let n3 = [];
+n3.push(...n1, ...n2);
+console.log(n3);
+/*
+[
+  1, 2, 3, 4,  5,
+  6, 7, 8, 9, 10
+]
+*/
+
 
 console.log('======================================================================');
 
@@ -172,6 +184,7 @@ let fruits = ['Apple', 'Grapes', 'Banana' , 'Orange'];
 console.log(fruits);//[ 'Apple', 'Grapes', 'Banana', 'Orange' ]
 let removedFruits = fruits.splice(2, 1);//Gives back the array of the removed elements
 console.log(fruits);//[ 'Apple', 'Grapes', 'Orange' ]
+console.log(removedFruits);//[ 'Banana' ]
 
 
 console.log('======================================================================');
@@ -179,9 +192,9 @@ console.log('===================================================================
 
 //Add the new element at your desired index:
 //push() can be done by using this:
-fruits.splice(3, 0, 'Guava');//Here adding 'Guava' at the end of the array --> Meaning push(''Guava'') operation is happening here.
+let ra1 = fruits.splice(3, 0, 'Guava');//Here adding 'Guava' at the end of the array --> Meaning push(''Guava'') operation is happening here.
 console.log(fruits);//[ 'Apple', 'Grapes', 'Orange', 'Guava' ]
-
+console.log(ra1);//[]
 
 console.log('======================================================================');
 
