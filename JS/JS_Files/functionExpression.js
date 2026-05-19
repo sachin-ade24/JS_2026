@@ -22,6 +22,7 @@ let cart_new = newCart();
 console.log(cart_new);//This will give you 100.
 console.log(newCart.name);
 
+console.log('===================================================================================================================');
 
 let newCart1 = function addToCart(productName){
     console.log('Add to new cart: ', productName);
